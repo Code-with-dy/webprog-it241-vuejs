@@ -6,7 +6,7 @@
     }
  
     body {
-    background-color: black;
+    background-color: white;
     color: white;
     font-family: Arial, sans-serif;
     text-align: center;
@@ -17,7 +17,7 @@
 
 h1 {
     color: red;
-    text-shadow: 2px 2px 10px red;
+    text-shadow: 2px 2px 10px black;
 }
 
 p {
@@ -28,8 +28,8 @@ p {
 
 img {
     margin-top: 20px;
-    border: 3px solid red;
-    box-shadow: 0 0 20px red;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
 }
 
 .container {
@@ -41,7 +41,7 @@ img {
 
 .container div {
     background-color: #330000;
-    border: 1px solid red;
+    border: 1px solid white;
     width: 300px; 
     height: auto; 
     margin: 10px; 
@@ -57,7 +57,7 @@ img {
 }
 
 .container div:hover {
-    background-color: red;
+    background-color: white;
     color: black;
     cursor: pointer;
 }
