@@ -3,18 +3,16 @@
 <head>
   <title>My first Vue page</title>
   <link rel="stylesheet" href="css/images.css">
-  <link rel="stylesheet" href="css/style.css?version=0.3">">
+  <link rel="stylesheet" href="css/style.css?version=0.3">
   <link rel="stylesheet" href="css/flexbox.css">
 </head>
 <body>
 
-  <h1> My Personal Profile Web page - Dylan D. Villanueva </h1>
+<h1>My Personal Profile Web page - Dylan D. Villanueva</h1>
 
 <h2>Picture Gallery</h2>
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy31gH8mAAkJ57L0g-H_k-7o4CCaUD_pidbQ&s" alt="image">
-
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy31gH8mAAkJ57L0g-H_k-7o4CCaUD_pidbQ&s" alt="image">
+<img src="encrypted-tbn0.gstatic.com" alt="image">
+<img src="encrypted-tbn0.gstatic.com" alt="image">
 
 <div class="container">
     <div>
@@ -42,23 +40,28 @@
         <h2>Hobbies</h2>
         <p> My hobbies are playing mobile games, watching anime, playing sports, and traveling. </p>
     </div>
-    
 </div>
 
 <h1>Vue Example</h1>
-
 <p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
 
 <div id="app">
-  {{ Happy New Year Everyoneeee! }}
+  {{ message }}
 </div>
 
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="unpkg.com"></script>
+
+<script>
+  const { createApp } = Vue
+  createApp({
+    data() {
+      return {
+        message: 'Happy New Year Everyoneeee!'
+      }
+    }
+  }).mount('#app')
+</script>
+
 <script src="js/images.js"></script>
-
-
 </body>
-
 </html>
-
-
