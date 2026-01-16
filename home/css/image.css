@@ -29,4 +29,18 @@ img {
     height: auto;
 }
 
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 250px;
+  max-width: 90%;
+  height: auto;
+}
+
+
 
