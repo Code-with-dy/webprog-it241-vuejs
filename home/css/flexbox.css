@@ -67,3 +67,18 @@ p {
   background-color: black;
   color: white;
 }
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#app2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
