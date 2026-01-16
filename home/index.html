@@ -1,70 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>My first Vue page</title>
-
   <link rel="stylesheet" href="css/images.css">
-  <link rel="stylesheet" href="css/style.css?version=0.1">
- 
+  <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/flexbox.css">
 </head>
 
 <body>
 
-  <h1>My Personal Profile Web page - Dylan D. Villanueva</h1>
+<h1>My Personal Profile Web page - Dylan D. Villanueva</h1>
 
-  <h2>Picture Gallery</h2>
+<h2>Picture Gallery</h2>
 
-  <div class="image-row">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy31gH8mAAkJ57L0g-H_k-7o4CCaUD_pidbQ&s" class="profile-img" alt="image">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy31gH8mAAkJ57L0g-H_k-7o4CCaUD_pidbQ&s" class="profile-img" alt="image">
+<div class="image-row">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy31gH8mAAkJ57L0g-H_k-7o4CCaUD_pidbQ&s" class="profile-img">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy31gH8mAAkJ57L0g-H_k-7o4CCaUD_pidbQ&s" class="profile-img">
+</div>
+
+<div class="container">
+  <div>
+    <h2>About me</h2>
+    <p>My name is Dylan D. Villanueva.</p>
+    <p>I am 19 years old.</p>
   </div>
 
-  <div class="container">
-    <div>
-      <h2>About me</h2>
-      <p>My name is Dylan D. Villanueva.</p>
-      <p>I am 19 years old.</p>
-    </div>
-
-    <div>
-      <h2>House</h2>
-      <p>Currently living at San Antonio Village Makati City.</p>
-    </div>
-
-    <div>
-      <h2>School</h2>
-      <p>I am currently studying at Asia Pacific College</p>
-    </div>
-
-    <div>
-      <h2>Course</h2>
-      <p>My course is Bachelor of Science in Information Technology.</p>
-    </div>
-
-    <div>
-      <h2>Hobbies</h2>
-      <p>My hobbies are playing mobile games, watching anime, playing sports, and traveling.</p>
-    </div>
+  <div>
+    <h2>School</h2>
+    <p>Asia Pacific College</p>
   </div>
+</div>
 
-  <h1>Vue Example</h1>
+<h1>Vue Example</h1>
 
-  <p>The message is taken from 'data' inside the Vue instance by writing {{ message }} inside the div with id="app".</p>
+<div id="app2">
+  <img v-for="x in manyFoods" :src="x" class="food-icon">
+</div>
 
-  <div id="app">
-    {{ message }}
-  </div>
-
-  <div id="app2">
-    <div>
-      <img v-for="x in manyFoods" :src="x" class="food-icon">
-    </div>
-  </div>
-
-
-  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-  <script src="js/images.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="js/images.js"></script>
 
 </body>
 </html>
-
