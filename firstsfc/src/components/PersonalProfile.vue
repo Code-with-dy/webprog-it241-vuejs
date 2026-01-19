@@ -64,84 +64,154 @@ const products = ref([
   </div>
 </template>
 
-<style scoped>
-:root {
-  --primary: #42b883;
-  --bg-soft: #f9f9f9;
-  --text-main: #2c3e50;
-  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #121212; 
+  color: #f1f1f1; 
+  text-align: center;
+  line-height: 1.6;
 }
 
-.app-wrapper {
-  font-family: 'Inter', sans-serif;
-  color: var(--text-main);
-  background-color: var(--bg-soft);
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+h1 {
+  background: #1f1f1f;
+  font-size: 2.8rem;
+  color: #f1f1f1; 
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2); 
+  margin-top: 30px;
 }
 
-.profile-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-bottom: 50px;
+h2 {
+  font-size: 2rem;
+  color: #e74c3c; 
 }
 
-.info-box {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  transition: transform 0.2s ease;
+p {
+  font-size: 1.1rem;
+  color: #bdc3c7; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
 }
 
-.info-box:hover {
-  transform: translateY(-5px);
-}
-
-.about { grid-column: span 2; }
-.hobbies { grid-column: span 3; }
-
-.store-header { text-align: center; margin-bottom: 30px; }
-
-.products-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-}
-
-.product-card {
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: var(--shadow);
+.container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 20px;
+  padding: 20px;
 }
 
-.card-image {
+.container div {
+  background-color: #1f1f1f; 
+  color: #fff;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  text-align: left;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.container div:hover {
+  background-color: #2c2c2c; 
+  color: #fff;
+  transform: translateY(-10px);
+}
+
+
+header {
+  background: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #f39c12; 
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #1f1f1f; 
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.image {
   height: 180px;
   background-size: cover;
   background-position: center;
+  border-radius: 10px;
+  align-content: center;
 }
 
-.card-content { padding: 20px; text-align: center; }
+h3 {
+  font-size: 1.5rem;
+  color: #e74c3c; 
+  margin-top: 20px;
+}
 
-.action-btn {
-  background: #42b883;
+.desc {
+  font-size: 1rem;
+  color: #bdc3c7; 
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.price {
+  color: #2ecc71; 
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #e74c3c; 
   color: white;
   border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-weight: 600;
+  border-radius: 5px;
   cursor: pointer;
-  width: 100%;
-  margin-top: 15px;
+  transition: background 0.3s ease;
 }
 
-@media (max-width: 768px) {
-  .profile-grid { grid-template-columns: 1fr; }
-  .about, .hobbies { grid-column: span 1; }
+button:hover {
+  background: #c0392b; 
 }
+
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+
 </style>
