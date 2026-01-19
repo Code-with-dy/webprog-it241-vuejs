@@ -26,7 +26,7 @@ const products = ref([
       </div>
       <div class="info-box house">
         <h2>House</h2>
-        
+
         <p>San Antonio Village, Makati City.</p>
       </div>
       <div class="info-box school">
