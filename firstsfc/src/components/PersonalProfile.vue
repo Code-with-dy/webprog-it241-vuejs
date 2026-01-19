@@ -1,4 +1,5 @@
 <template>
+ <h1>{{ message }}</h1>
   <div class="container">
   <div>
     <h2>About Me</h2>
@@ -77,7 +78,10 @@
   </div>
 </template>
 
-<script></script>
+<script setup>
+import { ref } from 'vue';
+const message = ref('Hello Vue!');
+</script>
 
 <style src="./css/personalprofile.css"></style>
 
