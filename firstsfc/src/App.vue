@@ -1,10 +1,25 @@
 <template>
-  <h1>Personal Profile and Food</h1>
-  <food-item/>
-  <food-item2/>
-  <personal-profile/>
+  <div id="app">
+    <personal-profile/>
+  </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: 'App'
+}
+</script>
 
-<style></style>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+</style>
