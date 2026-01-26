@@ -1,0 +1,7 @@
+body, .main-container {
+  /* Remove or change centering styles */
+  display: block; /* Change from flex to block */
+  margin: 0; /* Ensure no auto margins are centering it */
+  padding: 20px; /* Add desired padding */
+  text-align: left; /* Align text to the left */
+}
