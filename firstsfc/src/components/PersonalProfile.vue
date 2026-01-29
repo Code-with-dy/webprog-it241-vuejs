@@ -61,7 +61,7 @@ body {
 h1 {
   background: #1f1f1f;
   font-size: 2.8rem;
-  color: #f1f1f1; 
+  color: #0a0a0a; 
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2); 
   margin: 0;
   padding-top: 20px;
