@@ -5,6 +5,7 @@
   <food-item/>
   <food-item/>
   <comment-form/>
+  <rest-api/>
 
   <comment/>
    
